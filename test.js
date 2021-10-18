@@ -20,12 +20,12 @@ addStyleString('div[data-testid="placementTracking"]{ display: none !important }
 }
 
 // Instagram
-// if (site == "instagram") {
+if (site == "instagram") {
 document.querySelector("nav").firstElementChild.firstElementChild.firstElementChild.style = "position: relative"
 
 document.querySelector('a[href="/explore/"]').parentElement.remove();
 
 document.querySelector('div[data-testid="new-post-button"]').remove();
-// };
+};
 
 
