@@ -1,4 +1,4 @@
-window.alert("test");
+
 
 function addStyleString(str) {
     var node = document.createElement('style');
@@ -10,6 +10,7 @@ site = window.location.hostname.split('.').slice(-2).join('.').split(".com")[0]
 
 // Twitter
 if (site == "twitter") {
+    window.alert("Twitter");
 document.querySelector('[role="banner"]').firstElementChild.remove();
 document.querySelector('[role="banner"]').firstElementChild.style.cssText ="position:relative;overflow:hidden"
 
@@ -20,7 +21,13 @@ addStyleString('div[data-testid="placementTracking"]{ display: none !important }
 }
 
 // Instagram
+
+
+
 if (site == "instagram") {
+    
+    window.alert("IG");
+    
 document.querySelector("nav").firstElementChild.firstElementChild.firstElementChild.style = "position: relative"
 
 document.querySelector('a[href="/explore/"]').parentElement.remove();
