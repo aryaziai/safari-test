@@ -1,3 +1,5 @@
+window.alert("test");
+
 function addStyleString(str) {
     var node = document.createElement('style');
     node.innerHTML = str;
