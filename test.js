@@ -24,7 +24,24 @@ site = window.location.hostname.split('.').slice(-2).join('.').split(".com")[0]
 
 // Instagram
 
+
+
+
 if (site == "instagram") {
+    
+    
+   
+async function myDisplay() {
+    
+  let myPromise = new Promise(function(resolve) {
+    resolve("I love You !!");
+  });
+  document.querySelector("body").innerHTML = await myPromise;
+}
+
+myDisplay();
+    
+    
     
     window.alert("IG");
     
