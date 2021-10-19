@@ -5,7 +5,7 @@ if (site == "twitter") {
 const myDisplay = new Promise((resolve, reject) => {
   resolve();
 }).then(() => {
-  document.querySelector('[role="banner"]').firstElementChild.remove();
+  document.querySelector('[role="banner"]').firstElementChild.style.display = "none !important"
   document.querySelector('[role="banner"]').firstElementChild.style.cssText = "position:relative;overflow:hidden";
   document.querySelector('a[href="/explore"]').parentElement.remove();
  });
