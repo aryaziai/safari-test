@@ -41,13 +41,10 @@ document.querySelector('div[data-testid="new-post-button"]').remove();
   });
    
 
-myDisplay();
-    
     
     
 //     window.alert("IG");
     
 
 };
-
 
