@@ -16,6 +16,7 @@ if (site == "instagram") {
   const myDisplay = new Promise((resolve, reject) => {
     resolve();
   }).then(() => {
+      window.alert("IG")
     document.querySelector("nav").firstElementChild.firstElementChild.firstElementChild.style = "position: relative";
     document.querySelector('a[href="/explore/"]').parentElement.remove();
     document.querySelector('div[data-testid="new-post-button"]').remove();
