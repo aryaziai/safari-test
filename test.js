@@ -7,7 +7,8 @@ const myDisplay = new Promise((resolve, reject) => {
 }).then(() => {
   document.querySelector('[role="banner"]').firstElementChild.remove();
   document.querySelector('[role="banner"]').firstElementChild.style.cssText = "position:relative;overflow:hidden";
-});
+  document.querySelector('a[href="/explore"]').parentElement.remove();
+ });
 };
 
 // Instagram
