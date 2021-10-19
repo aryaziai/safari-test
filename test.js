@@ -4,6 +4,7 @@ site = window.location.hostname.split(".").slice(-2).join(".").split(".com")[0];
 const myDisplay = new Promise((resolve, reject) => {
   resolve();
 }).then(() => {
+  window.alert("twitter")
   document.querySelector('[role="banner"]').firstElementChild.remove();
   document.querySelector('[role="banner"]').firstElementChild.style.cssText = "position:relative;overflow:hidden";
 });
