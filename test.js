@@ -29,19 +29,17 @@ site = window.location.hostname.split('.').slice(-2).join('.').split(".com")[0]
 
 if (site == "instagram") {
     
-    
-   
-async function myDisplay() {
-    
-  let myPromise = new Promise(function(resolve) {
+ const myDisplay = new Promise((resolve, reject) => {
+  resolve();
+})
+  .then(() => {
 document.querySelector("nav").firstElementChild.firstElementChild.firstElementChild.style = "position: relative"
 
 document.querySelector('a[href="/explore/"]').parentElement.remove();
 
 document.querySelector('div[data-testid="new-post-button"]').remove();
   });
-  document.querySelector("body").innerHTML = await myPromise;
-}
+   
 
 myDisplay();
     
