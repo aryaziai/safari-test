@@ -1,11 +1,10 @@
 site = window.location.hostname.split(".").slice(-2).join(".").split(".com")[0];
 
 // Twitter
-if (site == "instagram") {
+if (site == "twitter") {
 const myDisplay = new Promise((resolve, reject) => {
   resolve();
 }).then(() => {
-  window.alert("twitter")
   document.querySelector('[role="banner"]').firstElementChild.remove();
   document.querySelector('[role="banner"]').firstElementChild.style.cssText = "position:relative;overflow:hidden";
 });
@@ -16,7 +15,6 @@ if (site == "instagram") {
   const myDisplay = new Promise((resolve, reject) => {
     resolve();
   }).then(() => {
-      window.alert("IG")
     document.querySelector("nav").firstElementChild.firstElementChild.firstElementChild.style = "position: relative";
     document.querySelector('a[href="/explore/"]').parentElement.remove();
     document.querySelector('div[data-testid="new-post-button"]').remove();
