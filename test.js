@@ -17,7 +17,7 @@ if (site == "instagram") {
     resolve();
   }).then(() => {
     document.querySelector("nav").firstElementChild.firstElementChild.firstElementChild.style = "position: relative";
-    document.querySelector(".o64aR").remove();
+    document.querySelector('a[href="/explore/"]').parentElement.remove();
     document.querySelector('div[data-testid="new-post-button"]').remove();
   });
 };
