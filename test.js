@@ -27,7 +27,7 @@ if (site == "reddit") {
   const myDisplay = new Promise((resolve, reject) => {
     resolve();
   }).then(() => {
-    document.querySelector('[rel="nofollow noopener sponsored"]').parentElement.remove();
+    document.querySelectorAll('[rel="nofollow noopener sponsored"]').forEach(r => r.parentElement.remove());
   });
 };
 
