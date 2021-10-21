@@ -1,8 +1,10 @@
+// Instagram
+
 div['data-testid="mobile-nav-logged-in"'] > div:nth-child(2) {
   display: none !important;
 }
 
-a[href="/explore"], a[href="/explore/"], div[data-testid="placementTracking"], div[data-testid="new-post-button"]  {
+a[href="/explore/"], div[data-testid="new-post-button"]  {
   display: none !important;
 }
 
@@ -11,11 +13,14 @@ header {
   overflow:hidden";
 }
 
-header[role="banner"] > div {
+// Twitter
+
+
+a[href="/explore"], div[data-testid="placementTracking"], header[role="banner"] > div:nth-child(1) {
  display: none !important;
 }
- 
-header[role="banner"] > div > div {
+
+header[role="banner"] > div:nth-child(2) {
  position: relative !important;
 }
 
