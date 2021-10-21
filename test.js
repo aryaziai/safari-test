@@ -7,7 +7,7 @@ if (site == "instagram") {
     document.querySelector('a[href="/explore/"]').parentElement.style.cssText = "display:none";
     document.querySelector("nav").firstElementChild.firstElementChild.firstElementChild.style = "position: relative";
     document.querySelector('div[data-testid="mobile-nav-logged-in"] > div:nth-child(2)').style.cssText = "display:none";
-    document.querySelector('div[data-testid="new-post-button"]').style.cssText = "display:none";
+    document.querySelector('div[data-testid="mobile-nav-logged-in"] > div:nth-child(3)').style.cssText = "display:none";
   });
 }
 
