@@ -4,8 +4,8 @@ if (site == "twitter") {
   const myDisplay = new Promise((resolve, reject) => {
     resolve();
   }).then(() => {
-    // document.querySelector('header[role="banner"] > div:nth-child(1)').style.cssText = "display:none";
-    // document.querySelector('header[role="banner"] > div:nth-child(2)').style.cssText = "position:relative;overflow:hidden";
+    document.querySelector('header[role="banner"] > div:nth-child(1)').style.cssText = "display:none";
+    document.querySelector('header[role="banner"] > div:nth-child(2)').style.cssText = "position:relative;overflow:hidden";
     document.querySelector('a[href="/explore"]').style.cssText = "display:none";
   });
 }
