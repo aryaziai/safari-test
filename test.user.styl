@@ -1,4 +1,46 @@
+// Instagram
+
+div[data-testid="mobile-nav-logged-in"] > div:nth-child(2) {
+  display: none !important;
+}
+
+a[href="/explore/"],
+div[data-testid="new-post-button"] {
+  display: none !important;
+}
+
+// Twitter
+
 a[href="/explore"],
 div[data-testid="placementTracking"] {
+  display: none !important;
+}
+
+header[role="banner"] {
+  position: relative !important;
+  overflow: hidden;
+}
+
+header[role="banner"] > div:nth-child(2) {
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+header[role="banner"] > div > div > div {
+  display: none;
+}
+
+// reddit
+
+.TopNav {
+  position: relative !important;
+}
+
+.NavFrame__below-top-nav {
+  padding-top: 0 !important;
+}
+
+.XPromoInFeed,
+.TopNav__promoButton {
   display: none !important;
 }
