@@ -1,27 +1,15 @@
-// use div selector below to see if commit was succesful
-// remember to wait 5 minutes to see changes
 
-div {
-	background-color: orange !important;
-}
-
-
-// instagram
+//instagram
 
 div['data-testid="mobile-nav-logged-in"'] > div:nth-child(2) {
   display: none !important;
 }
 
-a[href="/explore/"], div[data-testid="new-post-button"]  {
+a[href="/explore"], div[data-testid="placementTracking"], a[href="/explore/"], div[data-testid="new-post-button"]  {
   display: none !important;
 }
 
-
-// twitter
-
-a[href="/explore"], div[data-testid="placementTracking"] {
-  display: none !important;
-}
+//twitter
 
 header[role="banner"] > div:nth-child(1) {
   display: none;
@@ -32,17 +20,10 @@ header[role="banner"] > div:nth-child(2) {
   position: relative !important;
 }
 
-
-// reddit
-
-.TopNav {
-  position: relative !important;
+div {
+	background-color: blue !important;
 }
 
-.NavFrame__below-top-nav {
-  padding-top: 0 !important;
-}
 
-.XPromoInFeed, .TopNav__promoButton {
-  display: none !important;
-}
+//use article selector above to see if commit was succesful.
+//remember to restart iPhone
