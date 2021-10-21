@@ -14,6 +14,7 @@ if (site == "instagram") {
   const myDisplay = new Promise((resolve, reject) => {
     resolve();
   }).then(() => {
+		document.querySelector('a[href="/explore/"]').parentElement.style.cssText = "display:none";
     document.querySelector("nav").firstElementChild.firstElementChild.firstElementChild.style = "position: relative";
     document.querySelector('div[data-testid="mobile-nav-logged-in"] > div:nth-child(2)').style.cssText = "display:none";
     document.querySelector('div[data-testid="new-post-button"]').style.cssText = "display:none";
@@ -24,7 +25,7 @@ if (site == "reddit") {
   const myDisplay = new Promise((resolve, reject) => {
     resolve();
   }).then(() => {
-		
+
     document.querySelectorAll('[rel="nofollow noopener sponsored"]').forEach((r) => r.parentElement.remove());
   });
 }
