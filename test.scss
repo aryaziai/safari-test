@@ -1,6 +1,6 @@
 // Instagram
 
-div['data-testid="mobile-nav-logged-in"'] > div:nth-child(2) {
+div[data-testid="mobile-nav-logged-in"] > div:nth-child(2) {
   display: none !important;
 }
 
