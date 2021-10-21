@@ -21,3 +21,13 @@ if (site == "instagram") {
     document.querySelector('div[data-testid="new-post-button"]').style.cssText = "display:none";
   });
 };
+
+// Reddit
+if (site == "reddit") {
+  const myDisplay = new Promise((resolve, reject) => {
+    resolve();
+  }).then(() => {
+    document.querySelector('[rel="nofollow noopener sponsored"]').parentElement.remove();
+  });
+};
+
