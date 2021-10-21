@@ -1,6 +1,5 @@
 site = window.location.hostname.split(".").slice(-2).join(".").split(".com")[0];
 
-// Twitter
 if (site == "twitter") {
   const myDisplay = new Promise((resolve, reject) => {
     resolve();
@@ -11,7 +10,6 @@ if (site == "twitter") {
   });
 }
 
-// Instagram
 if (site == "instagram") {
   const myDisplay = new Promise((resolve, reject) => {
     resolve();
@@ -22,7 +20,6 @@ if (site == "instagram") {
   });
 }
 
-// Reddit
 if (site == "reddit") {
   const myDisplay = new Promise((resolve, reject) => {
     resolve();
