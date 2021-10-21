@@ -6,15 +6,20 @@ a[href="/explore"], a[href="/explore/"], div[data-testid="placementTracking"], d
   display: none !important;
 }
 
-header {
+
+header[role="banner"] {
   position: relative !important;
-  overflow:hidden;
+  overflow: hidden;
 }
 
-header[role="banner"] > div {
- display: none !important;
+header[role="banner"] > div:nth-child(2) {
+  overflow: hidden !important;
+  position: relative !important;
 }
 
-header[role="banner"] > div > div {
- position: relative !important;
+header[role="banner"] > div > div > div {
+  display: none;
 }
+
+
+
