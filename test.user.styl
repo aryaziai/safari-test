@@ -12,7 +12,7 @@ a[href="/explore/"], div[data-testid="new-post-button"]  {
 // Twitter
 
 
-a[href="/explore"], div[data-testid="placementTracking"], header[role="banner"] > div > div > div {
+a[href="/explore"], div[data-testid="placementTracking"] {
  display: none !important;
 }
 
@@ -25,6 +25,11 @@ header[role="banner"] {
 header[role="banner"] > div:nth-child(2) {
  overflow: hidden !important;
  position: relative !important;
+}
+
+
+header[role="banner"] > div > div > div {
+display: none;
 }
 
 
