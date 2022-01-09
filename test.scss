@@ -4,6 +4,10 @@ div[data-testid="mobile-nav-logged-in"] > div:nth-child(2) {
   display: none !important;
 }
 
+#nwmlay {
+  display: none;
+}
+
 a[href="/explore/"],
 div[data-testid="new-post-button"] {
   display: none !important;

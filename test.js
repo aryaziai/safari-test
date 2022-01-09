@@ -28,3 +28,11 @@ if (site == "reddit") {
     document.querySelectorAll('[rel="nofollow noopener sponsored"]').forEach((r) => r.parentElement.remove());
   });
 }
+
+if (site == "buffstream.io") {
+  const myDisplay = new Promise((resolve, reject) => {
+    resolve();
+  }).then(() => {
+    document.querySelector("#nwmlay").style.cssText = "display:none";
+  });
+}
